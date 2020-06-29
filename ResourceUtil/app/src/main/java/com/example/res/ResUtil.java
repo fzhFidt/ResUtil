@@ -6,7 +6,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.example.res.annotation.FieldType;
-import com.example.res.annotation.ViewField;
+import com.example.res.annotation.ResField;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -62,7 +62,7 @@ public class ResUtil {
             for (Field field : fields) {
                 Log.e("cl1"," field is "+field);
                 field.setAccessible(true);
-                ViewField annotation = field.getAnnotation(ViewField.class);
+                ResField annotation = field.getAnnotation(ResField.class);
                 Log.e("cl1"," annotation is "+annotation+" fieldName is "+ field.getName());
                 if(annotation == null) {
                     continue;

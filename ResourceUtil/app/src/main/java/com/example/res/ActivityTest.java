@@ -9,33 +9,33 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.res.annotation.FieldType;
-import com.example.res.annotation.ViewField;
+import com.example.res.annotation.ResField;
 
 public class ActivityTest  extends AppCompatActivity  {
-    @ViewField
+    @ResField
     private Button btnTest1;
-    @ViewField
+    @ResField
     private Button btnTest2;
-    @ViewField
+    @ResField
     private Button btnTest3;
-    @ViewField
+    @ResField
     private Button btnTest4;
-    @ViewField
+    @ResField
     private Button btnTest5;
-    @ViewField
+    @ResField
     private Button btnTest6;
-    @ViewField(resId = R.id.btnTest7)
+    @ResField(resId = R.id.btnTest7)
     private Button btnTest;
-    @ViewField(fieldType= FieldType.STRING)
+    @ResField(fieldType= FieldType.STRING)
     private String app_name;
-    @ViewField(fieldType= FieldType.STRING)
+    @ResField(fieldType= FieldType.STRING)
     private String app_name1;
-    @ViewField(fieldType = FieldType.COLOR)
+    @ResField(fieldType = FieldType.COLOR)
     private int  colorPrimary1;
     private Boolean check;
-    @ViewField(fieldType = FieldType.DINEN)
+    @ResField(fieldType = FieldType.DINEN)
     private float dimenWidth;
-    @ViewField(fieldType = FieldType.DINEN_PIXEL_SIZE)
+    @ResField(fieldType = FieldType.DINEN_PIXEL_SIZE)
     private int dimenHeight;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
